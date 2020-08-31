@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/layout_button"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:weightSum="2"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:id="@+id/Elegir"
+            android:text="seleccionar"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:textColor="@android:color/black"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn1"
+            />
+
+
+        <Button
+            android:id="@+id/Subir"
+            android:text="subir"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn2"
+            android:textColor="@android:color/black"
+            />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/TomarFoto"
+
+        android:layout_width="90dp"
+        android:layout_height="80dp"
+        android:background="@drawable/grabar"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+
+
+        />
+
+    <ImageView
+        android:id="@+id/ImageView"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_marginTop="@android:dimen/thumbnail_height"
+        android:background="@drawable/imagen"
+
+        />
+
+    <TextView
+        android:id="@+id/Respuesta"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textStyle="normal"
+
+        />
+
+
+</RelativeLayout>
